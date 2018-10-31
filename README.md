@@ -1,12 +1,42 @@
 # fdns
-This is a central repository with high level information on Foundation Services, tutorials, example code, etc.
+This is a central repository with high level information on Foundation Services, links to tutorials, example code, etc.
 
-## ----- Start of respository specific READ ME -----
-### This repository specific READ ME instructions go here
+## Running Locally
 
-Replace everything within this section demarcated with “-----“ with material appropriate to your repo that is useful to your developers and users like installation steps, user guide etc.
-## ----- End of respository specific READ ME -----
-  
+### Before you start
+For most repositories, you will need to have the following installed before getting up and running locally:
+
+- Docker, [Installation guides](https://docs.docker.com/install/)
+- Docker Compose, [Installation guides](https://docs.docker.com/compose/install/)
+- **Windows Users**: This project uses `Make`, please see [Cygwin](http://www.cygwin.com/) for running commands in this README
+
+## Packages and SDK's
+
+Packages deployed to NPM:
+
+* [FDNS JS SDK](https://www.npmjs.com/package/fdns-js-sdk)
+* [FDNS React UI](https://www.npmjs.com/package/fdns-ui-react)
+* [FDNS Java SDK](https://github.com/CDCgov/fdns-java-sdk)
+
+## Example Apps
+
+Example apps using the React UI and/or JS SDK:
+
+* [Whitelabel HL-7 Combiner Dashboard](https://github.com/CDCgov/ex-ui-hl7-combiner)
+
+## Microservices
+
+* [Object Service](https://github.com/CDCgov/fdns-ms-object), a mutable layer for interacting with the Data Lake
+* [Indexing](https://github.com/CDCgov/fdns-ms-indexing), the indexing or navigation layer of the Data Lake
+* [Storage](https://github.com/CDCgov/fdns-ms-storage), the immutable storage layer for the Data Lake
+* [Combiner](https://github.com/CDCgov/fdns-ms-combiner), a microservice for combining JSON files into a single CSV or XLSX file
+* [Rules Engine](https://github.com/CDCgov/fdns-ms-rules), a microservice for ingesting and validating JSON files
+* [Gateway](https://github.com/CDCgov/fdns-ms-gateway), the gateway layer for connecting deployed microservices together
+* [Reporting](https://github.com/CDCgov/fdns-ms-reporting), a microservice for generating reports from the Data Lake in XML, JSON, CSV, or XLSX
+* [CDA Utils](https://github.com/CDCgov/fdns-ms-cda-utils), a microservice for parsing and generating CDA data
+* [HL7 Utils](https://github.com/CDCgov/fdns-ms-hl7-utils), a microservice for parsing, validating, and generating HL7 data
+* [Microsoft Utils](https://github.com/CDCgov/fdns-ms-msft-utils), a microservice for parsing Microsoft formatted documents
+
 ## Public Domain
 This repository constitutes a work of the United States Government and is not
 subject to domestic copyright protection under 17 USC § 105. This repository is in
@@ -32,7 +62,6 @@ You should have received a copy of the Apache Software License along with this
 program. If not, see http://www.apache.org/licenses/LICENSE-2.0.html
 
 The source code forked from other open source projects will inherit its license.
-
 
 ## Privacy
 This repository contains only non-sensitive, publicly available data and
