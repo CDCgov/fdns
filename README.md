@@ -1,5 +1,13 @@
-# fdns
-This is a central repository with high level information on Foundation Services, links to tutorials, example code, etc.
+# Foundation Services (FDNS)
+This is a central repository with high level information on Foundation Services (FDNS), links to tutorials, example code, etc.
+
+## What are Foundation Services?
+
+Foundation Services (FDNS) is a library of foundational open source software components implemented as microservices. They can be assembled in various arrangements to rapidly and efficiently build modern, open, and interoperable public health software. They are considered “foundational” because of their high reusability and broad applicability to wide array of use cases.
+
+## Why use Foundation Services?
+
+FDNS are easily adapatable, portable, and open source. This can reduce costs and shorten schedules, allowing teams with limited resources to quickly build new applications or upgrade existing ones.
 
 ## Running Locally
 
@@ -16,26 +24,33 @@ Packages deployed to NPM:
 
 * [FDNS JS SDK](https://www.npmjs.com/package/fdns-js-sdk)
 * [FDNS React UI](https://www.npmjs.com/package/fdns-ui-react)
+
+Other SDK's (more to come):
+
 * [FDNS Java SDK](https://github.com/CDCgov/fdns-java-sdk)
+
 
 ## Example Apps
 
 Example apps using the React UI and/or JS SDK:
 
-* [Whitelabel HL-7 Combiner Dashboard](https://github.com/CDCgov/ex-ui-hl7-combiner)
+* [Example HL7 Combiner Tool](https://github.com/CDCgov/ex-ui-hl7-combiner)
 
-## Microservices
+## Available Open Source Foundation Services
 
-* [Object Service](https://github.com/CDCgov/fdns-ms-object), a mutable layer for interacting with the Data Lake
-* [Indexing](https://github.com/CDCgov/fdns-ms-indexing), the indexing or navigation layer of the Data Lake
-* [Storage](https://github.com/CDCgov/fdns-ms-storage), the immutable storage layer for the Data Lake
-* [Combiner](https://github.com/CDCgov/fdns-ms-combiner), a microservice for combining JSON files into a single CSV or XLSX file
-* [Rules Engine](https://github.com/CDCgov/fdns-ms-rules), a microservice for ingesting and validating JSON files
-* [Gateway](https://github.com/CDCgov/fdns-ms-gateway), the gateway layer for connecting deployed microservices together
-* [Reporting](https://github.com/CDCgov/fdns-ms-reporting), a microservice for generating reports from the Data Lake in XML, JSON, CSV, or XLSX
-* [CDA Utils](https://github.com/CDCgov/fdns-ms-cda-utils), a microservice for parsing and generating CDA data
-* [HL7 Utils](https://github.com/CDCgov/fdns-ms-hl7-utils), a microservice for parsing, validating, and generating HL7 data
-* [Microsoft Utils](https://github.com/CDCgov/fdns-ms-msft-utils), a microservice for parsing Microsoft formatted documents
+### Data Lake Services
+* [FDNS Storage Microservice](https://github.com/CDCgov/fdns-ms-storage), the immutable storage layer for the Data Lake
+* [FDNS Object Microservice](https://github.com/CDCgov/fdns-ms-object), a mutable layer for interacting with the Data Lake
+* [FDNS Indexing Microservice](https://github.com/CDCgov/fdns-ms-indexing), the indexing or navigation layer of the Data Lake
+
+### Other Utils
+* [FDNS Gateway Microservice](https://github.com/CDCgov/fdns-ms-gateway), the gateway layer for connecting deployed microservices together
+* [FDNS Combiner Microservice](https://github.com/CDCgov/fdns-ms-combiner), a microservice for combining JSON files into a single CSV or XLSX file
+* [FDNS Business Rules Microservice](https://github.com/CDCgov/fdns-ms-rules), a microservice for ingesting and validating JSON files
+* [FDNS Reporting Microservice](https://github.com/CDCgov/fdns-ms-reporting), a microservice for generating reports from the Data Lake in XML, JSON, CSV, or XLSX
+* [FDNS CDA Utilities Microservice](https://github.com/CDCgov/fdns-ms-cda-utils), a microservice for parsing and generating CDA data
+* [FDNS HL7 Utilities Microservice](https://github.com/CDCgov/fdns-ms-hl7-utils), a microservice for parsing, validating, and generating HL7 data
+* [FDNS Microsoft Utilities Microservice](https://github.com/CDCgov/fdns-ms-msft-utils), a microservice for parsing Microsoft formatted documents
 
 ## Public Domain
 This repository constitutes a work of the United States Government and is not
