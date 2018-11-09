@@ -1,12 +1,57 @@
-# fdns
-This is a central repository with high level information on Foundation Services, tutorials, example code, etc.
+# Foundation Services (FDNS)
+This is a central repository with high level information on Foundation Services (FDNS), links to tutorials, example code, etc.
 
-## ----- Start of respository specific READ ME -----
-### This repository specific READ ME instructions go here
+## What are Foundation Services?
 
-Replace everything within this section demarcated with “-----“ with material appropriate to your repo that is useful to your developers and users like installation steps, user guide etc.
-## ----- End of respository specific READ ME -----
-  
+Foundation Services (FDNS) is a library of foundational open source software components implemented as microservices. They can be assembled in various arrangements to rapidly and efficiently build modern, open, and interoperable public health software. They are considered “foundational” because of their high reusability and broad applicability to wide array of use cases.
+
+## Why use Foundation Services?
+
+FDNS are easily adapatable, portable, and open source. This can reduce costs and shorten schedules, allowing teams with limited resources to quickly build new applications or upgrade existing ones.
+
+## Running Locally
+
+### Before you start
+For most repositories, you will need to have the following installed before getting up and running locally:
+
+- Docker, [Installation guides](https://docs.docker.com/install/)
+- Docker Compose, [Installation guides](https://docs.docker.com/compose/install/)
+- **Windows Users**: This project uses `Make`, please see [Cygwin](http://www.cygwin.com/) for running commands in this README
+
+## Packages and SDK's
+
+Packages deployed to NPM:
+
+* [FDNS JS SDK](https://www.npmjs.com/package/fdns-js-sdk)
+* [FDNS React UI](https://www.npmjs.com/package/fdns-ui-react)
+
+Other SDK's (more to come):
+
+* [FDNS Java SDK](https://github.com/CDCgov/fdns-java-sdk)
+
+
+## Example Apps
+
+Example apps using the React UI and/or JS SDK:
+
+* [Example HL7 Combiner Tool](https://github.com/CDCgov/ex-ui-hl7-combiner)
+
+## Available Open Source Foundation Services
+
+### Data Lake Services
+* [FDNS Storage Microservice](https://github.com/CDCgov/fdns-ms-storage), the immutable storage layer for the Data Lake
+* [FDNS Object Microservice](https://github.com/CDCgov/fdns-ms-object), a mutable layer for interacting with the Data Lake
+* [FDNS Indexing Microservice](https://github.com/CDCgov/fdns-ms-indexing), the indexing or navigation layer of the Data Lake
+
+### Other Utils
+* [FDNS Gateway Microservice](https://github.com/CDCgov/fdns-ms-gateway), the gateway layer for connecting deployed microservices together
+* [FDNS Combiner Microservice](https://github.com/CDCgov/fdns-ms-combiner), a microservice for combining JSON files into a single CSV or XLSX file
+* [FDNS Business Rules Microservice](https://github.com/CDCgov/fdns-ms-rules), a microservice for ingesting and validating JSON files
+* [FDNS Reporting Microservice](https://github.com/CDCgov/fdns-ms-reporting), a microservice for generating reports from the Data Lake in XML, JSON, CSV, or XLSX
+* [FDNS CDA Utilities Microservice](https://github.com/CDCgov/fdns-ms-cda-utils), a microservice for parsing and generating CDA data
+* [FDNS HL7 Utilities Microservice](https://github.com/CDCgov/fdns-ms-hl7-utils), a microservice for parsing, validating, and generating HL7 data
+* [FDNS Microsoft Utilities Microservice](https://github.com/CDCgov/fdns-ms-msft-utils), a microservice for parsing Microsoft formatted documents
+
 ## Public Domain
 This repository constitutes a work of the United States Government and is not
 subject to domestic copyright protection under 17 USC § 105. This repository is in
@@ -32,7 +77,6 @@ You should have received a copy of the Apache Software License along with this
 program. If not, see http://www.apache.org/licenses/LICENSE-2.0.html
 
 The source code forked from other open source projects will inherit its license.
-
 
 ## Privacy
 This repository contains only non-sensitive, publicly available data and
